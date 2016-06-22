@@ -1,8 +1,8 @@
   <head>
-    <link rel="icon" type="image/ico" href="https://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/surfinchikapu.ico"/>
+    <link rel="icon" type="image/ico" href="surfinchikapu.ico"/>
     <style>
       body {
-        background-image: url("https://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/bigwater.gif");
+        background-image: url("bigwater.gif");
         background-repeat: repeat;
       }
       img {
@@ -17,7 +17,7 @@
   </head>
   <body>
     <script>
-var context = new AudioContext();
+var context = new (webkitAudioContext || AudioContext)();
 var playSound = context.createBufferSource();
 var getSound = new XMLHttpRequest();
 getSound.open("GET", "theloopforreal2.mp3", true);
@@ -32,5 +32,5 @@ getSound.onload = function() {
 }
 getSound.send();
 </script>
-    <img src="https://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/surfinchikapu.gif">
+    <img src="surfinchikapu.gif">
   </body>
