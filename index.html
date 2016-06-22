@@ -17,11 +17,10 @@
   </head>
   <body>
     <script>
-var "https://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/theloopforreal2.mp3" = "surf.mp3"
 var context = new AudioContext();
 var playSound = context.createBufferSource();
 var getSound = new XMLHttpRequest();
-getSound.open("GET", "https://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/theloopforreal2.mp3", true);
+getSound.open("GET", "theloopforreal2.mp3", true);
 getSound.responseType = "arraybuffer";
 getSound.onload = function() {
   context.decodeAudioData(getSound.response, function(buffer){
