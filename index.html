@@ -1,54 +1,24 @@
+<!DOCTYPE html>
+<html>
   <head>
-    <link rel="icon" type="image/ico" href="surfinglibre.ico"/>
-    <style>
-      footer {
-        font-size: .75em;
-        font-family: Courier, serif;
-        text-align: center;
-        color: white;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-      body {
-        background-image: url("cleanwater.gif");
-        background-repeat: repeat;
-      }
-      img {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@riglow">
-<meta name="twitter:title" content="﻿ｐｉｋａｃｈｕ   ｌｉｂｒｅ    ｕｓｅｄ    ｓｕｒｆ!">
-<meta name="twitter:description" content="🌊﻿ｉｔ'ｓ    ｓｕｐｅｒ    ｅｆｆｅｃｔｉｖｅ!🌊">
-<meta name="twitter:image" content="http://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/librecard.jpg">
+    <link rel="icon" type="image/ico" href="surfinglibre.ico">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@riglow">
+    <meta name="twitter:title" content="﻿ｐｉｋａｃｈｕ   ｌｉｂｒｅ    ｕｓｅｄ    ｓｕｒｆ!">
+    <meta name="twitter:description" content="🌊﻿ｉｔ'ｓ    ｓｕｐｅｒ    ｅｆｆｅｃｔｉｖｅ!🌊">
+    <meta name="twitter:image" content="http://raw.githubusercontent.com/riglow/hm03.surf/gh-pages/librecard.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="hm03.css" rel="stylesheet">
+    <title>pikachu libre used surf!</title>
   </head>
+
   <body>
-    <script>
-var context = new AudioContext();
-var playSound = context.createBufferSource();
-var getSound = new XMLHttpRequest();
-getSound.open("GET", "theloopforreal2.mp3", true);
-getSound.responseType = "arraybuffer";
-getSound.onload = function() {
-  context.decodeAudioData(getSound.response, function(buffer){
-    playSound.buffer = buffer;
-    playSound.connect(context.destination);
-    playSound.loop = true
-    playSound.start(0);
-  });
-}
-getSound.send();
-</script>
-    <img src="surfinglibre.gif">
+    <img id="pikachu" src="surfinglibre.gif" />
+    <script src="hm03.js"></script>
+
   </body>
   <footer><p>💖 sponsored by aster + tim. improved by j & cole. 💖</p>
     <p>made by lylat</p>
   </footer>
+</html>
