@@ -19,6 +19,13 @@ getSound.onload = function() {
 getSound.send();
 
 pikachu.addEventListener("click", () => {
-    playSound.start(0);
+    try {
+        playSound.start(0);
+    } catch (e) {
+        if (e instanceof InvalidStateError) {}
+        else {
+            console.log(e)
+        }
+    }
     console.log("pika pika!")
 })
