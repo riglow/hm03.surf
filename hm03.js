@@ -4,7 +4,7 @@ var context = new AudioContext();
 var playSound = context.createBufferSource();
 var getSound = new XMLHttpRequest();
 
-getSound.open("GET", "theloopforreal2.mp3", true);
+getSound.open("GET", "sea.wav", true);
 
 getSound.responseType = "arraybuffer";
 
