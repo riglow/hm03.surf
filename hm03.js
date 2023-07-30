@@ -20,5 +20,6 @@ getSound.onload = function() {
 getSound.send();
 
 pikachu.addEventListener("click", () => {
+    playSound.start(0);
     console.log("pika pika!")
 })
