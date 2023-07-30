@@ -13,7 +13,6 @@ getSound.onload = function() {
         playSound.buffer = buffer;
         playSound.connect(context.destination);
         playSound.loop = true
-        playSound.start(0);
     });
 }
 
