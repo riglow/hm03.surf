@@ -18,7 +18,7 @@ getSound.onload = function() {
 
 getSound.send();
 
-pikachu.addEventListener("click", () => {
+function surf() {
     try {
         playSound.start(0);
     } catch (e) {
@@ -28,4 +28,11 @@ pikachu.addEventListener("click", () => {
         }
     }
     console.log("pika pika!")
+}
+
+pikachu.addEventListener("click", () => {
+    surf()
+})
+pikachu.addEventListener("touchend", () => {
+    surf()
 })
