@@ -19,15 +19,12 @@ getSound.onload = function() {
 getSound.send();
 
 function surf() {
-    try {
+    if (pikachu.getAttribute("clicked")) {
+        console.log("pika pika!")
+    } else {
         playSound.start(0);
-    } catch (e) {
-        if (e instanceof InvalidStateError) {}
-        else {
-            console.log(e)
-        }
+        pikachu.setAttribute("clicked", true);
     }
-    console.log("pika pika!")
 }
 
 pikachu.addEventListener("click", () => {
